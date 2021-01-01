@@ -35,6 +35,10 @@ footer p {
     vertical-align: middle;
 }
 
+.active {
+    color: #ffffff;
+}
+
 .footer-link {
     color: #c5c6c7;
 }
