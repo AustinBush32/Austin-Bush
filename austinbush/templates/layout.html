@@ -25,20 +25,33 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggle">
-                    <div class="navbar-nav mr-auto bigger-font">
-                        <a class="nav-item nav-link {% if title == 'Home' %}active{% endif %}" href="{{ url_for('main.home') }}">Home</a>
-                        <a class="nav-item nav-link" href="{{ url_for('main.resume') }}">Resume</a>
-                        <a class="nav-item nav-link" href="{{ url_for('main.coursework') }}">Coursework</a>
+                    <ul class="navbar-nav mr-auto bigger-font">
+                        <li class="nav-item {% if title == 'Home' %}active{% endif %}">
+                            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item {% if title == 'Resume' %}active{% endif %}">
+                            <a class="nav-item nav-link" href="{{ url_for('main.resume') }}">
+                                Resume
+                            </a>
+                        </li>
+                        <li class="nav-item {% if title == 'Coursework' %}active{% endif %}">
+                            <a class="nav-item nav-link" href="{{ url_for('main.coursework') }}">
+                                Coursework
+                            </a>
+                        </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-item nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Projects
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" target="_blank" rel="noopener noreferrer" href="https://www.ezalgorithms.com">ezalgorithms.com</a>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item disabled" href="#">More on the way...</a>
                             </div>
                         </li>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </nav>
