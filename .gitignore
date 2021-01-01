@@ -1,0 +1,5 @@
+.DS_Store
+/austinbush/__pycache__/
+/austinbush/errors/__pycache__/
+/austinbush/main/__pycache__/
+env/
