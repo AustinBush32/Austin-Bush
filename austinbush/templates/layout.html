@@ -67,6 +67,16 @@
                     {% endfor %}
                 {% endif %}
             {% endwith %}
+            <div class="media">
+                <img class="rounded-circle img" src="{{ url_for('static', filename='assets/head_shot.jpg') }}">
+                <div class="media-body">
+                    <h2>Austin Bush</h2>
+                    <ul class="social-icons">
+                        <li><a class="github" target="_blank" rel="noopener noreferrer" href="https://github.com/AustinBush32/EZ-Algorithms"><i class="fab fa-github"></i></a></li>
+                        <li><a class="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/austin-bush-46914a16a/"><i class="fab fa-linkedin"></i></a></li>   
+                    </ul>
+                </div>
+            </div>
             {% block content %}{% endblock %}
         </div>
     </main>
